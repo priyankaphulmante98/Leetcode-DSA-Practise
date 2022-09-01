@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //-------------------Inheritance====>
+
+// class employ{
+//     constructor(n,a){
+//      this.name=n;
+//      this.age=a;
+//     }
+// }
+
+// class manager extends employ{
+//   constructor(n,a, d){
+//     super(n,a)
+//     this.department = d;
+
+//   }
+// }
+// let manager1 = new manager("priya",23, "web-developer");
+// console.log(manager1);
+
+// console.log(manager);
+
+
+// class Student{
+//     constructor(n,a){
+//         this.name=n;
+//         this.age=a;
+//     }
+// }
+
+// class employ extends Student{
+    
+//     constructor(n,a,d){
+//         super(n,a);
+//         this.department=d;
+//     }
+// }
+
+// let employ1 = new employ("priya", 23, "Web-developer");
+// console.log(employ1);
+
+// class vaishu{
+//     constructor(n, s, h){
+//         this.name=n;
+//         this.salary=s;
+//         this.hobby=h;
+//     }
+//     msg(){
+//         console.log("hi...");
+//     }
+// }
+
+// class priti extends vaishu{ 
+//     constructor(n,a,h,d){
+//         super(n,a,h);
+//         this.department=d;
+//     }
+//     info(){
+//         super.msg();
+//         console.log(this.name  + " is manager of department " + this.department);
+//     }
+// }
+
+// class manager extends priti{
+//     constructor(n,a,h,d){
+//         super(n,a,h,d);
+// }
+// }
+
+// let manager1 = new manager("vaishu",50000, "swimming" , "system engineer");
+// console.log(manager1);
+
+// let priti1 = new priti("vaishu",50000, "swimming" , "system engineer");
+// console.log(priti1.info());
+ //-----****************************************-polymorphism 
+
+
+// poly= Many;
+// morph=forms;
+// polyorphism = manyforms;
+//    polymorphism in  object-oriented programming is the abillity 
+//    to create a variable, a function or an object that 
+//    has more than one form.
+
+// class Animal{
+//     constructor(n){
+//         this.name=n;
+//     }
+//     eats(){
+//         console.log(this.name + " eats food ");
+//     }
+// }
+// let Animal1= new Animal("dog");
+// console.log(Animal1)
+
+// class Alligator extends Animal{
+ 
+//    eats(){
+//     super.eats();
+//     console.log(this.name + " eats fishes ");
+//    }
+
+// }
+
+// let murphy = new Alligator("marphy");
+//  murphy.eats();
+//********************************************************** */
+//polymorphism
+// poly= Many;
+// morph=forms;
+// polyorphism = manyforms;
+//    polymorphism in  object-oriented programming is the abillity 
+//    to create a variable, a function or an object that 
+//    has more than one form.
+
+// class human{
+//     constructor(n,a){
+//         this.name=n;
+//         this.age=a;
+//     }
+//     eats(){
+//         console.log(this.name+ " eats food ");
+//     }
+// }
+// let human1 = new human("priya",23);
+// console.log(human1);
+
+// class Animal extends human{
+//     eats(){
+//     super.eats();
+//     console.log(this.name + " eats fishes ");
+// }
+// }
+// let Animal1= new Animal("dog",10)
+// Animal1.eats();
+ 
+
+//*********************************************************************** *
+//Abstraction=====>
+
+// An abstration is a way of hiding the implemention details 
+// and showing only the functionallity to the users
+
+//Abstraction hides certain details and only show the essential featurs of the object
+
+// the approach improves understandabillity as well as maintainabillity of the code.
+
+// ex: microwave ==> users know about anything backent method 
+
+function Employ(n,a,s){
+    this.name=n;
+    this.age=a;
+    this.salary=s;
+
+    this.getEmployDetails = function(){
+        console.log("Name: "+ this.name+" | Age:"+ this.age);
+    }
+}
+let employ1 = new Employ("priya",23 ,500000)
+employ1.getEmployDetails();
+
+
+</script>
